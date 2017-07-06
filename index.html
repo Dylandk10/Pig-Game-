@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <!-- main menu button every page -->
+        <div id="menu-home">
+            <button type="button" id="homeBtn">Main Menu</button>
+        </div>
+
+        <!-- Main menu section -->
+        
+        <div id="mainMenu">
+            <h3>Main Menu</h3>
+            <button type="button" class="menuBtn" id="playNowBtn">Play Now</button>
+            <button type="button" class="menuBtn" id="rulesBtn">Rules</button>
+            <button type="button" class="menuBtn" id="contactBtn">Contact</button>
+        </div>
+        
+        <!-- Game section -->
+                <div id="game">
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new" id="gameButton"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll" id="gameButton"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold" id="gameButton"><i class="ion-ios-download-outline"></i>Hold</button>
+            <div id="scoreInput">
+                ENTER ENDING SCORE:<input type="text" id="endScore" value="100">
+            </div>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-1.png" alt="Dice" class="dice2">
+            <div id="holdInputs">
+                <span id="holdDice">Hold Dice: 0</span>
+                <span id="highStreak" value="0">Highest streak: 0</span>
+            </div>
+        </div>
+        </div>
+        
+        
+        <!-- Rules section -->
+        <div id="rules">
+            
+            <h3>RULES AND GAMEPLAY</h3>
+            <ul>
+                <li>Objective: To roll dice and try to obtain highest score</li>
+                <li>Select ending score in center</li>
+                <li></li>
+                <li>1. If you roll a one, next players turn.</li>
+                <li>2. If you roll two six's in a row, next players turn.</li>
+                <li>3. If you roll double sixes, next players turn.</li>
+                <li>To see what you roll pull up console.log</li>
+            </ul>
+        </div>
+        
+        <!-- Contact section -->
+        <div id="formSection">
+            <h4>Contact Us</h4>
+            <form>
+                FirstName<input type="text" class="box"id="firstName">
+                LastName<input type="text" class="box"id="lastName">
+                Email<input type="text" class="box"id="emil" required>
+                Messege<textarea type="text" class="box" id="messege" cols="60" rows="10"></textarea>
+            </form>
+            
+        </div>
+        <div id="aboutSection">
+            <h4>About Us</h4>
+                <p>This little game was made by -3ELLY- I did leach some code from Udemy website so ill only give myself 40% credit of this project. If you Like the game or layout please feel free to concat me! This game was made strickly for learning purposes. Thanks for the support and feedback!</p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
